@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Currency Converter</h3>
+      <label for="amount">
+        <span>Amount</spam><br>
+        <input type="text" id="amount" value="">
+      </label><br><br><br>
+
+      <label>
+        <span>From</span><br>
+        <div id="from">
+          <ul id="chooseFrom">
+            <li id="chosenCountryFrom"><img src="flags/US.png"> <span>US Dollar USD</span></li>
+
+            <i class="fa-solid fa-angle-down" id="angle1"></i>
+            <i class="fa-solid fa-xmark" id="x1"></i>
+          </ul>
+
+          <ul id="fromCountryList">
+            <li><img src="flags/DZ.png"> <span>Algerian Dinar DZD</span></li>
+            <li><img src="flags/AR.png"> <span> Argentine Peso ARS</span></li>
+            <li><img src="flags/AU.png"> <span> Australian Dollar AUD</span></li>
+            <li><img src="flags/BH.png"> <span> Bahrain Dinar BHD</span></li>
+            <li><img src="flags/BD.png"> <span> Bangladeshi Taka BDT</span></li>
+            <li><img src="flags/BY.png"> <span> Belarus Ruble BYN</span></li>
+            <li><img src="flags/BR.png"> <span> Brazilian Real BRL</span></li>
+            <li><img src="flags/BN.png"> <span> Brunei Ringgit BND</span></li>
+            <li><img src="flags/BG.png"> <span> Bulgarian Lev BGN</span></li>
+            <li><img src="flags/MM.png"> <span> Brumese Kyat MMK</span></li>
+            <li><img src="flags/KH.png"> <span> Cambodian Riel KHR</span></li>
+            <li><img src="flags/CA.png"> <span> Canadian Dollar CAD</span></li>
+            <li><img src="flags/CL.png"> <span> Chilean Peso CLP</span></li>
+            <li><img src="flags/CN.png"> <span> Chinese Yuan CNY</span></li>
+            <li><img src="flags/CO.png"> <span> Colombian Peso COP</span></li>
+            <li><img src="flags/CR.png"> <span> Costa Rican Colon CRC</span></li>
+            <li><img src="flags/CZ.png"> <span> Czech Crown CZK</span></li>
+            <li><img src="flags/DK.png"> <span> Danish Krone DKK</span></li>
+            <li><img src="flags/EG.png"> <span> Egyptian Pound EGP</span></li>
+            <li><img src="flags/EU.png"> <span> Euro EUR</span></li>
+            <li><img src="flags/HK.png"> <span> Hong Kong Dollar HKD</span></li>
+            <li><img src="flags/HU.png"> <span> Hungarian Forint HUF</span></li>
+            <li><img src="flags/IS.png"> <span> Icelandic Krona ISK</span></li>
+            <li><img src="flags/IN.png"> <span> Indian Rupee INR</span></li>
+            <li><img src="flags/ID.png"> <span> Indonesian Rupiah IDR</span></li>
+            <li><img src="flags/IR.png"> <span> Iranian Rial IRR</span></li>
+            <li><img src="flags/IQ.png"> <span> Iraqi Dinar IQD</span></li>
+            <li><img src="flags/IL.png"> <span> Israel New Shekel ILS</span></li>
+            <li><img src="flags/JP.png"> <span> Japanese Yen JPY</span></li>
+            <li><img src="flags/JO.png"> <span> Jordanian Dinar JOD</span></li>
+            <li><img src="flags/KZ.png"> <span> Kazakh Tenge KZT</span></li>
+            <li><img src="flags/KE.png"> <span> Kenya Shilling KES</span></li>
+            <li><img src="flags/KW.png"> <span> Kuwait Dinar KWD</span></li>
+            <li><img src="flags/LA.png"> <span> Lao Kip LAK</span></li>
+            <li><img src="flags/LB.png"> <span> Lebanese Pound LBP</span></li>
+            <li><img src="flags/MO.png"> <span> Macanese Pataca MOP</span></li>
+            <li><img src="flags/MY.png"> <span> Malaysian Ringgit MYR</span></li>
+            <li><img src="flags/MX.png"> <span> Mexican Peso MXN</span></li>
+            <li><img src="flags/MD.png"> <span> Moldovan Leu MDL</span></li>
+            <li><img src="flags/MA.png"> <span> Moroccan Dirham MAD</span></li>
+            <li><img src="flags/NG.png"> <span> Naira NGN</span></li>
+            <li><img src="flags/NP.png"> <span> Nepalese Rupee NPR</span></li>
+            <li><img src="flags/TW.png"> <span> New Taiwan Dollar TWD</span></li>
+            <li><img src="flags/NZ.png"> <span> New Zealand Dollar NZD</span></li>
+            <li><img src="flags/NO.png"> <span> Norwegian Krone NOK</span></li>
+            <li><img src="flags/OM.png"> <span> Omani Rial OMR</span></li>
+            <li><img src="flags/PK.png"> <span> Pakistan Rupee PKR</span></li>
+            <li><img src="flags/PH.png"> <span> Philippine Peso PHP</span></li>
+            <li><img src="flags/PL.png"> <span> Polish Zloty PLN</span></li>
+            <li><img src="flags/GB.png"> <span> Pound Sterling GBP</span></li>
+            <li><img src="flags/QA.png"> <span> Qatari Riyal QAR</span></li>
+            <li><img src="flags/RO.png"> <span> Romanian Leu RON</span></li>
+            <li><img src="flags/RU.png"> <span> Russian Ruble RUB</span></li>
+            <li><img src="flags/SA.png"> <span> Saudi Riyal SAR</span></li>
+            <li><img src="flags/SG.png"> <span> Singapore Dollar SGD</span></li>
+            <li><img src="flags/ZA.png"> <span> South African Rand ZAR</span></li>
+            <li><img src="flags/LK.png"> <span> Sri Lanka Rupee LKR</span></li>
+            <li><img src="flags/SE.png"> <span> Swedish Krona SEK</span></li>
+            <li><img src="flags/CH.png"> <span> Swiss Franc CHF</span></li>
+            <li><img src="flags/SY.png"> <span> Syrian Pound SYP</span></li>
+            <li><img src="flags/TZ.png"> <span> Tanzania Shilling TZS</span></li>
+            <li><img src="flags/TN.png"> <span> Tunisian Dinar TND</span></li>
+            <li><img src="flags/TR.png"> <span> Turkish Lira TRY</span></li>
+            <li><img src="flags/AE.png"> <span> UAE Dirham AED</span></li>
+            <li><img src="flags/UG.png"> <span> Uganda Shilling UGX</span></li>
+            <li><img src="flags/UA.png"> <span> Ukrainian Hryvna UAH</span></li>
+            <li><img src="flags/US.png"> <span> US Dollar USD</span></li>
+            <li><img src="flags/UZ.png"> <span> Uzbekistani Som UZS</span></li>
+            <li><img src="flags/VN.png"> <span> Vietnamese Dong VND</span></li>
+            <li><img src="flags/KR.png"> <span> Won KRW</span></li>
+            <li><img src="flags/ZM.png"> <span> Zambian Kwacha ZMW</span></li>
+          </ul>
+        </div>
+      </label><br><br>
+
+
+      <label>
+        <span>To</span><br>
+        <div id="to">
+          <ul id="chooseTo">
+            <li id="chosenCountryTo"><img src="flags/EU.png"> <span>Euro EUR</span></li>
+
+            <i class="fa-solid fa-angle-down" id="angle2"></i>
+            <i class="fa-solid fa-xmark" id="x2"></i>
+          </ul>
+
+          <ul id="toCountryList">
+            <li><img src="flags/DZ.png"> <span>Algerian Dinar DZD</span></li>
+            <li><img src="flags/AR.png"> <span> Argentine Peso ARS</span></li>
+            <li><img src="flags/AU.png"> <span> Australian Dollar AUD</span></li>
+            <li><img src="flags/BH.png"> <span> Bahrain Dinar BHD</span></li>
+            <li><img src="flags/BD.png"> <span> Bangladeshi Taka BDT</span></li>
+            <li><img src="flags/BY.png"> <span> Belarus Ruble BYN</span></li>
+            <li><img src="flags/BR.png"> <span> Brazilian Real BRL</span></li>
+            <li><img src="flags/BN.png"> <span> Brunei Ringgit BND</span></li>
+            <li><img src="flags/BG.png"> <span> Bulgarian Lev BGN</span></li>
+            <li><img src="flags/MM.png"> <span> Brumese Kyat MMK</span></li>
+            <li><img src="flags/KH.png"> <span> Cambodian Riel KHR</span></li>
+            <li><img src="flags/CA.png"> <span> Canadian Dollar CAD</span></li>
+            <li><img src="flags/CL.png"> <span> Chilean Peso CLP</span></li>
+            <li><img src="flags/CN.png"> <span> Chinese Yuan CNY</span></li>
+            <li><img src="flags/CO.png"> <span> Colombian Peso COP</span></li>
+            <li><img src="flags/CR.png"> <span> Costa Rican Colon CRC</span></li>
+            <li><img src="flags/CZ.png"> <span> Czech Crown CZK</span></li>
+            <li><img src="flags/DK.png"> <span> Danish Krone DKK</span></li>
+            <li><img src="flags/EG.png"> <span> Egyptian Pound EGP</span></li>
+            <li><img src="flags/EU.png"> <span> Euro EUR</span></li>
+            <li><img src="flags/HK.png"> <span> Hong Kong Dollar HKD</span></li>
+            <li><img src="flags/HU.png"> <span> Hungarian Forint HUF</span></li>
+            <li><img src="flags/IS.png"> <span> Icelandic Krona ISK</span></li>
+            <li><img src="flags/IN.png"> <span> Indian Rupee INR</span></li>
+            <li><img src="flags/ID.png"> <span> Indonesian Rupiah IDR</span></li>
+            <li><img src="flags/IR.png"> <span> Iranian Rial IRR</span></li>
+            <li><img src="flags/IQ.png"> <span> Iraqi Dinar IQD</span></li>
+            <li><img src="flags/IL.png"> <span> Israel New Shekel ILS</span></li>
+            <li><img src="flags/JP.png"> <span> Japanese Yen JPY</span></li>
+            <li><img src="flags/JO.png"> <span> Jordanian Dinar JOD</span></li>
+            <li><img src="flags/KZ.png"> <span> Kazakh Tenge KZT</span></li>
+            <li><img src="flags/KE.png"> <span> Kenya Shilling KES</span></li>
+            <li><img src="flags/KW.png"> <span> Kuwait Dinar KWD</span></li>
+            <li><img src="flags/LA.png"> <span> Lao Kip LAK</span></li>
+            <li><img src="flags/LB.png"> <span> Lebanese Pound LBP</span></li>
+            <li><img src="flags/MO.png"> <span> Macanese Pataca MOP</span></li>
+            <li><img src="flags/MY.png"> <span> Malaysian Ringgit MYR</span></li>
+            <li><img src="flags/MX.png"> <span> Mexican Peso MXN</span></li>
+            <li><img src="flags/MD.png"> <span> Moldovan Leu MDL</span></li>
+            <li><img src="flags/MA.png"> <span> Moroccan Dirham MAD</span></li>
+            <li><img src="flags/NG.png"> <span> Naira NGN</span></li>
+            <li><img src="flags/NP.png"> <span> Nepalese Rupee NPR</span></li>
+            <li><img src="flags/TW.png"> <span> New Taiwan Dollar TWD</span></li>
+            <li><img src="flags/NZ.png"> <span> New Zealand Dollar NZD</span></li>
+            <li><img src="flags/NO.png"> <span> Norwegian Krone NOK</span></li>
+            <li><img src="flags/OM.png"> <span> Omani Rial OMR</span></li>
+            <li><img src="flags/PK.png"> <span> Pakistan Rupee PKR</span></li>
+            <li><img src="flags/PH.png"> <span> Philippine Peso PHP</span></li>
+            <li><img src="flags/PL.png"> <span> Polish Zloty PLN</span></li>
+            <li><img src="flags/GB.png"> <span> Pound Sterling GBP</span></li>
+            <li><img src="flags/QA.png"> <span> Qatari Riyal QAR</span></li>
+            <li><img src="flags/RO.png"> <span> Romanian Leu RON</span></li>
+            <li><img src="flags/RU.png"> <span> Russian Ruble RUB</span></li>
+            <li><img src="flags/SA.png"> <span> Saudi Riyal SAR</span></li>
+            <li><img src="flags/SG.png"> <span> Singapore Dollar SGD</span></li>
+            <li><img src="flags/ZA.png"> <span> South African Rand ZAR</span></li>
+            <li><img src="flags/LK.png"> <span> Sri Lanka Rupee LKR</span></li>
+            <li><img src="flags/SE.png"> <span> Swedish Krona SEK</span></li>
+            <li><img src="flags/CH.png"> <span> Swiss Franc CHF</span></li>
+            <li><img src="flags/SY.png"> <span> Syrian Pound SYP</span></li>
+            <li><img src="flags/TZ.png"> <span> Tanzania Shilling TZS</span></li>
+            <li><img src="flags/TN.png"> <span> Tunisian Dinar TND</span></li>
+            <li><img src="flags/TR.png"> <span> Turkish Lira TRY</span></li>
+            <li><img src="flags/AE.png"> <span> UAE Dirham AED</span></li>
+            <li><img src="flags/UG.png"> <span> Uganda Shilling UGX</span></li>
+            <li><img src="flags/UA.png"> <span> Ukrainian Hryvna UAH</span></li>
+            <li><img src="flags/US.png"> <span> US Dollar USD</span></li>
+            <li><img src="flags/UZ.png"> <span> Uzbekistani Som UZS</span></li>
+            <li><img src="flags/VN.png"> <span> Vietnamese Dong VND</span></li>
+            <li><img src="flags/KR.png"> <span> Won KRW</span></li>
+            <li><img src="flags/ZM.png"> <span> Zambian Kwacha ZMW</span></li>
+          </ul>
+        </div>
+      </label><br><br>
+
+
+      <div id="btn">
+        <button id="convert">Convert</button>
+      </div>
+
+      <h3 id="result"></h3>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
