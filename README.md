@@ -1,2 +1,3 @@
 # Currency-Converter
-An app for converting different currencies
+- Created a JS app for converting different currencies
+- Implemented Fetch API to get Real-Time Exchange Rates from ExchangeRateApi
