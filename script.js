@@ -32,7 +32,7 @@ function convertCurrency() {
 }
 
 const getRates = async () => {
-  const res = await fetch(URL + `usd/egp.json`);
+  const res = await fetch(URL + from + '/' + to + '.json');
 
   try {
     const data = await res.json();
