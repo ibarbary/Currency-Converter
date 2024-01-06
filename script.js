@@ -5,7 +5,7 @@ convert.addEventListener("click", convertCurrency);
 
 function convertCurrency() {
   let amount = document.querySelector("#amount");
-  money = amount.value;
+  money = Number(amount.value);
 
   if (money == 0) money = 0;
 
