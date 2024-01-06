@@ -12,7 +12,7 @@ function convertCurrency() {
   let data = getRates().then(function (data) {
     let l1 = document.querySelector("#chosenCountryFrom");
     let s1 = l1.lastChild.textContent;
-    let from = (s1[s1.length - 3] + s1[s1.length - 2] + s1[s1.length - 1]).toLowerCase();
+    let from = typeof s1;
 
     let l2 = document.querySelector("#chosenCountryTo");
     let s2 = l2.lastChild.textContent;
