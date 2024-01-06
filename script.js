@@ -1,5 +1,4 @@
-let baseURL = "http://api.exchangeratesapi.io/v1/";
-let apiKey = "19ab521b7b5103cc2497f9d68016e279";
+let URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/";
 
 let convert = document.querySelector("#convert");
 convert.addEventListener("click", convertCurrency);
@@ -19,8 +18,8 @@ function convertCurrency() {
     let s2 = l2.lastChild.textContent;
     let to = s2[s2.length - 3] + s2[s2.length - 2] + s2[s2.length - 1];
 
-    let n = data["rates"][to] / data["rates"][from];
-    value = parseFloat(n * money).toFixed(2);
+    let val = data[to];
+    value = parseFloat(val * money).toFixed(2);
 
     let res = document.querySelector("#result");
 
@@ -33,7 +32,7 @@ function convertCurrency() {
 }
 
 const getRates = async () => {
-  const res = await fetch(baseURL + "latest?access_key=" + apiKey);
+  const res = await fetch(URL + `${from}/${to}.json`);
 
   try {
     const data = await res.json();
