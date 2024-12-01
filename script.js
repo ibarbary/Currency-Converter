@@ -1,4 +1,4 @@
-let URL = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@/latest/currencies/";
+let URL = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/";
 
 let convert = document.querySelector("#convert");
 convert.addEventListener("click", convertCurrency);
