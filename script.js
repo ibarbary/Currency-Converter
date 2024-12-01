@@ -1,4 +1,4 @@
-let URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/";
+let URL = "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@/latest/currencies/";
 
 let convert = document.querySelector("#convert");
 convert.addEventListener("click", convertCurrency);
@@ -33,7 +33,7 @@ function convertCurrency() {
 
   let data = getRates().then(function (data) {
     
-    let val = data[to];
+    let val = data[from][to];
     let value = parseFloat(val * money).toFixed(2);
 
     let res = document.querySelector("#result");
@@ -47,7 +47,7 @@ function convertCurrency() {
 }
 
 const getRates = async () => {
-  const res = await fetch(URL + from + '/' + to + '.json');
+  const res = await fetch(URL + from + '.json');
 
   try {
     const data = await res.json();
